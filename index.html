@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>
+      Frontend Mentor | Huddle landing page with single introductory section
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 22px;
+      }
+      :root {
+        --Violet: hsl(257, 40%, 49%);
+        --Soft-Magenta: hsl(300, 69%, 71%);
+      }
+      body{
+        background-image: url(images/bg-desktop.svg) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: var(--Violet);
+
+      }
+      .main-container {
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 1200px;
+      }
+      .desc-container {
+        display: flex;
+        
+        margin-top: 150px;
+        margin-bottom: 0px;
+        justify-content: space-between;
+      }
+      .footer-container {
+        margin-top: 0px;
+        text-align: end;
+        color: white;
+        
+        
+      }
+      .register-button {
+        margin-top: 30px;
+        color: var(--Soft-Magenta); /* Blue background color */
+
+        border-radius: 40px; /* Curve of border corners */
+
+        text-transform: uppercase; /* Make letters uppercase */
+
+        background-color: white;
+
+        padding: 20px;
+
+        text-decoration: none;
+
+        max-width: 300px;
+
+        text-align: center;
+        /* Text color */
+      }
+      .register-button:hover{
+        background-color: var(--Soft-Magenta);
+        color:white;
+      }
+      .register-container {
+        margin-top:100px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        max-width: 760px;
+      }
+      .register-text{
+        
+        color:white;
+      }
+      .title{
+        font-size: 48px;
+        margin-bottom: 32px;
+      }
+      .block{
+        display: block;
+        font-weight: 400;
+      }
+      /* .mockup-image{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background: url("images/illustration-mockups.svg") no-repeat left top;
+        background-size: 83%;
+      } */
+      .bold{
+        font-weight: 600;
+      }
+      .app-logo{
+        margin-left: 20px;
+        font-size: 32px;
+      }
+      .app-logo:hover{
+        color: var(--Soft-Magenta);
+        cursor: pointer;
+      }
+      @media only screen and (max-width: 760px) {
+        .main-container {
+        padding: 100px;
+      }
+      .desc-container {
+        flex-direction: column;
+      }
+      .footer-container{
+          margin-top: 20px;
+      }
+      /* .mockup-image{
+        background: url("images/illustration-mockups.svg") no-repeat left top;
+      } */
+}
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="title-container">
+        <img src="images/logo.svg" alt="" />
+      </div>
+      <div class="desc-container">
+        <img src = "images/illustration-mockups.svg" class = "mockup-image"></img>
+        <div class="register-container">
+          <p class = "register-text">
+           <span class = "title block bold">Build The Community Your Fans Will Love </span>  
+           <span class="block">            Huddle re-imagines the way
+            we build communities. You have a voice, but so does your audience.
+            Create connections with your users as you engage in genuine
+            discussion.</span>
+
+          </p>
+          <a class="register-button" href = "">Register</a>
+        </div>
+      </div>
+      <footer class="footer-container">
+        
+        <ion-icon class="app-logo" name="logo-facebook"></ion-icon>
+        <ion-icon class="app-logo" name="logo-twitter"></ion-icon>
+        <ion-icon class="app-logo" name="logo-instagram"></ion-icon>
+      
+      </footer>
+    </div>
+  </body>
+</html>
